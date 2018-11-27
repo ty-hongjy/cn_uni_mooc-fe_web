@@ -47,7 +47,9 @@
     <script  language="JavaScript">
     	//function getdiv(){
     		var myimg = document.getElementById("#sideBox");
-    		alert(myimg);
+    		const box = document.querySelector('#sideBox')
+    		//alert(myimg);
+    		//alert(box);
     		console.log("ok")
 
     		//var myimg = document.body.getElementById("sideBox");
@@ -55,11 +57,18 @@
     		var myimg = document.getElementById("wrap");
     		console.log("ok1")
 
-    		alert(myimg);
+    		//alert(myimg);
 
     		//$(document).ready(function(){
     //alert($('#sideBox'))
     		//alert(myimg.background.url)
+    		//window.onload = function() {
+	//var but = document.getElementById('button');
+	//var div = document.getElementById('getStyle');
+	//but.onclick = function() {
+		var a = document.defaultView.getComputedStyle(div);
+		alert(a.width);//100px
+
     	//}
     </script>
 </head>
