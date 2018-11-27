@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>唐诗</title>
+    <style type="text/css">
+        * {
+            margin:0;
+            padding:0;
+        }
+        body {
+            font-family:"微软雅黑";
+            font-size:20px;
+        }/*设置页面全局参数*/
+        #wrap {
+            margin:0 auto;
+            width:900px;
+        }/*设置页面容器的宽度，并居中放置*/
+        #header {
+            height:50px;
+            width:900px;
+            background:#6cf;
+            margin-bottom:5px;
+        }/*设置页面头部信息区域*/
+        #container {
+            margin-bottom:5px;
+        }/*设置页面中部区域*/
+        #mainBox {
+            float:left;/*因为是固定宽度，采用浮动方法可避免ie 3像素bug*/
+            width:447px;
+            background:#cff url(dupu.jpeg) ;
+            background-size: cover;
+        }/*设置页面主内容区域  no-repeat*/
+        #sideBox {
+            float:right;
+            width:447px;
+            background:#9ff url(libai.jpg);
+            background-size: cover;
+        }/*设侧边栏区域*/
+        #footer {
+            clear:both;
+            width:900px;
+            height:50px;
+            background:#6cf;
+        }/*设置页面底部区域*/
+    </style>
+    <script  language="JavaScript">
+    	//function getdiv(){
+    		var myimg = document.getElementById("#sideBox");
+    		alert(myimg);
+    		console.log("ok")
+
+    		//var myimg = document.body.getElementById("sideBox");
+    		//var myimg = document.body.wrap.container.sideBox;
+    		var myimg = document.getElementById("wrap");
+    		console.log("ok1")
+
+    		alert(myimg);
+
+    		//$(document).ready(function(){
+    //alert($('#sideBox'))
+    		//alert(myimg.background.url)
+    	//}
+    </script>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">唐诗作品</div>
+    <div id="container">
+        <div id="mainBox" name="aa">
+            <p>武侯庙
+				<br>
+				<br>
+				遗庙丹青古，<br>空山草木长。<br>犹闻辞后主，<br>不复卧南阳。
+			</P>
+
+			<p>规雁
+				<br>
+				<br>
+				东来万里客，<br>乱定几年归。<br>肠断江城雁，<br>高高正北飞。
+			</p>
+			
+			<p>绝句
+				<br>
+				<br>
+				江边踏青罢，<br>回首见旌旗。<br>风起春城暮，<br>高楼鼓角悲。
+			</P>
+
+        </div>
+        <div id="sideBox">
+			<p>静夜思
+				<br>
+				<br>
+				床前明月光，<br>疑是地上霜。<br>举头望明月，<br>低头思故乡
+			</P>
+			<p>望庐山瀑布
+				<br>
+				<br>
+				日照香炉生紫烟，<br>遥看瀑布挂前川。<br>飞流直下三千尺，<br>疑是银河落九天。
+			</p>
+			<p>早发白帝城
+				<br>
+				<br>
+				朝辞白帝彩云间，<br>千里江陵一日还。<br>两岸猿声啼不住，<br>轻舟已过万重山。
+			</p>
+       </div>
+    </div>
+    <div id="footer">李白和杜浦的作品</div>
+</div>
+</body>
+</html>
