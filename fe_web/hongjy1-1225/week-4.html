@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title></title>
+        <style type="text/css">
+            /* {
+                margin:0;
+                padding:0;
+            }*/
+
+            #black {
+               top:50px;
+               left:50px;
+               height:150px;
+               width:150px;
+    	       position:relative;
+               background:black;
+            }
+
+        	#red {
+        	    top:10px;
+        	    left:10px;
+                height:80px;
+                width:80px;
+                position:absolute;
+                background:red;
+                z-index: 4;
+            }
+
+        	#blue {
+                top:20px;
+                left:20px;
+                height:80px;
+                width:80px;
+                position:absolute;
+                background:blue;
+                z-index: 6;
+            }
+        </style>
+	</head>
+<body>
+    <div id="black">
+        <div id="red"></div>
+        <div id="blue"></div>
+    </div>
+</body>
+</html>
