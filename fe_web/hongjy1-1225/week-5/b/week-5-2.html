@@ -2,47 +2,42 @@
 <html>
     <head lang="en">
         <meta charset="UTF-8">
-        <title></title>
+        <title>week-5-1</title>
         <style type="text/css">
-            /* {
-                margin:0;
-                padding:0;
-            }*/
 
-            #black {
-               top:50px;
-               left:50px;
-               height:150px;
-               width:150px;
-    	       position:relative;
-               background:black;
-            }
+            #div_img{
+              width:200px;
+              height:200px;
+              border:3px solid;
+              border-color: red;
 
-        	#red {
-        	    top:10px;
-        	    left:10px;
-                height:80px;
-                width:80px;
-                position:absolute;
-                background:red;
-                z-index: 4;
-            }
+              background-color: yellow;
+              background-repeat: no-repeat;
+               background-size: cover;
 
-        	#blue {
-                top:20px;
-                left:20px;
-                height:80px;
-                width:80px;
-                position:absolute;
-                background:blue;
-                z-index: 6;
+              margin: 10px;
+              padding: 5px;
+              overflow: hidden;
+			     }
+ 
+ 
+           #div_img:hover{
+               width:200px;
+               height:300px;
+              /*width: 120%;*/
+              /*height: 120%;*/
+              /*padding-top: 120%;*/
+
+              border-color: blue;
             }
+            
+
         </style>
 	</head>
-<body>
-    <div id="black">
-        <div id="red"></div>
-        <div id="blue"></div>
-    </div>
-</body>
+    <body>
+        <!--div width="300px"-->
+          <div id="div_img">
+          </div>
+        <!--/div-->
+    </body>
 </html>
