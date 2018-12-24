@@ -2,43 +2,32 @@
 <html>
     <head lang="en">
         <meta charset="UTF-8">
-        <title>week-5-1</title>
+        <title>week-6-1</title>
         <style type="text/css">
-
-            #div_img{
-              width:200px;
-              height:200px;
-              border:3px solid;
-              border-color: red;
-
-              background-image: url(goods_02.jpg);
-              background-color: yellow;
-              background-repeat: no-repeat;
-               background-size: cover;
-
-              margin: 10px;
-              padding: 5px;
-              overflow: hidden;
-              transition:all 1s linear;
-			     }
- 
- 
-           #div_img:hover{
-               width:240px;
-               height:240px;
-              /*width: 120%;*/
-              /*height: 120%;*/
-              /*padding-top: 120%;*/
-
-              border-color: blue;
-            }
-            
-
         </style>
+        <script type="text/javascript">
+        var year=prompt("请输入年份","1900")
+        k=(year%100==0) || (year%4==0);
+        if(k==0){
+        	alert(year+"年不是闰年");
+        	//break;
+        	//return 0;
+        }else if(year%4==0 && year%100!=0){
+        	alert(year+"年是闰年");
+        	//break;
+        	//return 0;
+        }else if (year%400==0){
+        	alert(year+"年是闰年")
+        }else{alert(year+"年不是闰年");}
+
+
+        </script>
 	</head>
     <body>
         <!--div width="300px"-->
           <div id="div_img">
+          <!--input type="text"  value="" /-->
+          <!--input type="button" onclick="confirm()" value="显示确认框" /-->
           </div>
         <!--/div-->
     </body>
